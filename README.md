@@ -1,5 +1,5 @@
 # Color Match
-Frameworks used:
+Your goal is to place the sliders as close as possible to the target color. The closer you are, the more points you score.
 
 Frameworks:
 - Foundation
