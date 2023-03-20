@@ -13,12 +13,12 @@
 		623C085629B337A200E8722F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 623C085529B337A200E8722F /* Preview Assets.xcassets */; };
 		623C085E29B3395F00E8722F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C085D29B3395F00E8722F /* Game.swift */; };
 		623C086029B3397400E8722F /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C085F29B3397400E8722F /* RGB.swift */; };
-		623C086229B3399C00E8722F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C086129B3399C00E8722F /* ColorExtension.swift */; };
+		623C086229B3399C00E8722F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C086129B3399C00E8722F /* Color+Extension.swift */; };
 		623C086429B3666100E8722F /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C086329B3666100E8722F /* Comments.swift */; };
 		623C087529B37D8100E8722F /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C087429B37D8100E8722F /* ColorCircle.swift */; };
 		623C087729B37DB100E8722F /* NeuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C087629B37DB100E8722F /* NeuButtonStyle.swift */; };
 		623C087929B37DDC00E8722F /* BevelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C087829B37DDC00E8722F /* BevelText.swift */; };
-		623C087B29B37DFF00E8722F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C087A29B37DFF00E8722F /* ViewExtension.swift */; };
+		623C087B29B37DFF00E8722F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C087A29B37DFF00E8722F /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +39,13 @@
 		623C085529B337A200E8722F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		623C085D29B3395F00E8722F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		623C085F29B3397400E8722F /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
-		623C086129B3399C00E8722F /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		623C086129B3399C00E8722F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		623C086329B3666100E8722F /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		623C086929B37A7E00E8722F /* ColorMatchingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorMatchingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		623C087429B37D8100E8722F /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
 		623C087629B37DB100E8722F /* NeuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuButtonStyle.swift; sourceTree = "<group>"; };
 		623C087829B37DDC00E8722F /* BevelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BevelText.swift; sourceTree = "<group>"; };
-		623C087A29B37DFF00E8722F /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		623C087A29B37DFF00E8722F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		621C31F329C858F600F3FE38 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				623C086129B3399C00E8722F /* Color+Extension.swift */,
+				623C087A29B37DFF00E8722F /* View+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		623C084229B337A000E8722F = {
 			isa = PBXGroup;
 			children = (
@@ -87,9 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				623C084E29B337A000E8722F /* ColorMatchingAppApp.swift */,
-				623C085029B337A000E8722F /* ContentView.swift */,
 				623C086329B3666100E8722F /* Comments.swift */,
+				623C085029B337A000E8722F /* ContentView.swift */,
 				623C085229B337A200E8722F /* Assets.xcassets */,
+				621C31F329C858F600F3FE38 /* Extension */,
 				623C085C29B3394200E8722F /* Model */,
 				623C085429B337A200E8722F /* Preview Content */,
 				623C087C29B3829600E8722F /* Utils */,
@@ -110,7 +120,6 @@
 			children = (
 				623C085D29B3395F00E8722F /* Game.swift */,
 				623C085F29B3397400E8722F /* RGB.swift */,
-				623C086129B3399C00E8722F /* ColorExtension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,7 +127,6 @@
 		623C087C29B3829600E8722F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				623C087A29B37DFF00E8722F /* ViewExtension.swift */,
 				623C087629B37DB100E8722F /* NeuButtonStyle.swift */,
 				623C087829B37DDC00E8722F /* BevelText.swift */,
 				623C087429B37D8100E8722F /* ColorCircle.swift */,
@@ -230,11 +238,11 @@
 				623C085129B337A000E8722F /* ContentView.swift in Sources */,
 				623C087929B37DDC00E8722F /* BevelText.swift in Sources */,
 				623C085E29B3395F00E8722F /* Game.swift in Sources */,
-				623C087B29B37DFF00E8722F /* ViewExtension.swift in Sources */,
+				623C087B29B37DFF00E8722F /* View+Extension.swift in Sources */,
 				623C084F29B337A000E8722F /* ColorMatchingAppApp.swift in Sources */,
 				623C087729B37DB100E8722F /* NeuButtonStyle.swift in Sources */,
 				623C086029B3397400E8722F /* RGB.swift in Sources */,
-				623C086229B3399C00E8722F /* ColorExtension.swift in Sources */,
+				623C086229B3399C00E8722F /* Color+Extension.swift in Sources */,
 				623C086429B3666100E8722F /* Comments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,11 +390,14 @@
 				DEVELOPMENT_TEAM = JNL77675JJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Color Match";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,9 +405,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.ColorMatchingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,11 +425,14 @@
 				DEVELOPMENT_TEAM = JNL77675JJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Color Match";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,9 +440,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.ColorMatchingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -436,12 +456,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JNL77675JJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.ColorMatchingAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = ColorMatchingApp;
 			};
 			name = Debug;
@@ -453,12 +477,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JNL77675JJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muradismayilov.ColorMatchingAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = ColorMatchingApp;
 			};
 			name = Release;

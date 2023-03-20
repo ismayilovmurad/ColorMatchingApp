@@ -17,7 +17,7 @@ struct ColorCircle: View {
                 .fill(Color.element)
                 .northWestShadow()
             Circle()
-                // MARK: The modifier fill(_:style:) can only be applied to shapes, so changing the order of modifiers flags an error.
+            // MARK: The modifier fill(_:style:) can only be applied to shapes, so changing the order of modifiers flags an error.
                 .fill(Color(red: rgb.red, green: rgb.green, blue: rgb.blue))
                 .padding(20)
         }
