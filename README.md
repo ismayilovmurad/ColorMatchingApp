@@ -1,4 +1,4 @@
-# ColorMatchingApp
+# Color Match
 Frameworks used:
 
 Frameworks:
