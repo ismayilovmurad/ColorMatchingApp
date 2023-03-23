@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    /// create a Game
-    @State var game = Game()
-    // MARK: @State is a Source of Truth. If the UI should update when a SwiftUI view property’s value changes, you designate it as a @State property. In SwiftUI, when a @State property’s value changes, the view invalidates its appearance and recomputes the body.
     
-    /// create a RGB
+    @State var game = Game()
+    
     @State var guess: RGB
     // MARK: It should be initialized in the previews if it's not initialized here
     
     @State var showScore = false
     
-    /// create CGFloats
     let circleSize: CGFloat = 0.275
     let labelHeight: CGFloat = 0.06
     let labelWidth: CGFloat = 0.53
@@ -26,7 +23,6 @@ struct ContentView: View {
     
     var body: some View {
         GeometryReader { proxy in
-            // MARK: GeometryReader provides you with a GeometryProxy object that has a frame method and size and safeAreaInset properties. You name this object proxy. Use GeometryReader to access the device’s frame and size properties.
             ZStack {
                 
                 /// ignore the safe area
@@ -84,7 +80,6 @@ struct ContentView_Previews: PreviewProvider {
 
 struct ColorSlider: View {
     @Binding var value: Double
-    // MARK: @Binding is not a Source of Truth. You use @Binding instead of @State, because the ColorSlider view doesn’t own this data. It receives an initial value from its parent view and mutates it. In order to feed the @State property to Binding<T> you need to use the $ operator. @Binding creates a two-way connection (binding) between a property and another view.
     
     var trackColor: Color
     
@@ -92,11 +87,9 @@ struct ColorSlider: View {
         HStack {
             Text("0")
             Slider(value: $value).accentColor(trackColor)
-            // MARK: By itself, value is just the value. It’s read-only. But $value is a read-write binding. You need it here to update the guess color while the user is changing the slider’s value.
             Text("255")
         }
         .font(.subheadline)
         .padding(.horizontal)
-        // MARK: padding() adds 10 points around the view
     }
 }

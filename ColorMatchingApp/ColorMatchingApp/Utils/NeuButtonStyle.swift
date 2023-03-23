@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// MARK: Create a custom ButtonStyle by implementing its makeBody(configuration:) method. You’ll lose some default behaviors like label color and dimming when tapped.
-
 // MARK: Neumorphism is the new skeuomorphism, a pushback against super-flat minimal UI. A neumorphic UI element appears to push up from below its background, producing a flat 3D effect.
 struct NeuButtonStyle: ButtonStyle {
     let width: CGFloat
