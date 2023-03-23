@@ -6,7 +6,8 @@ Frameworks:
 - SwiftUI
 
 Classes/Structures:
-- GeometryReader
+- State
+- Binding
 - ZStack
 - VStack
 - HStack
@@ -19,3 +20,7 @@ Classes/Structures:
 - Button
 - Alert
 - Slider
+- ButtonStyle
+- GeometryReader
+
+Preview: https://1drv.ms/u/s!AihKZ84PIseXii1Z26TeiAbfGh2t?e=ePN6U0
